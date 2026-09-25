@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+
+    <!-- AAJ hum sikhne wale hai css selector jiski madat se hum kisi specific chiz ko apne hisaab se
+     style kar sakte hai jaise for example neeche humne 2 div lagaya hai ab hum chahte hai ki hum pehle div ke
+     background ko red aur dusre div ke background ko yellow colour kare par jab hum 
+     
+     div{
+            background-color: red;
+        } 
+            
+       karte hai toh dono div background ka colour red ho raha hai jishe fix karne ke liye hum
+       code ko aise change karenge 
+       
+        .yellow{
+            background-color: yellow;
+        }
+        .red{
+            background-color: red;
+        }
+            
+        
+        yaha humne class ka use kia jiska colour hume yellow chahiye tha uska class humne yellow kia aur
+        css me .yellow lagake background select kia aur as it is red ka bhi kia-->
+
+
+    <style>
+        .yellow {
+            background-color: yellow;
+            text-align: center;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">I am a div</div>
+
+    <div class="yellow">I am another div</div>
+
+    <!-- Humne class selector sikh lia ab hum id selector sikhenge ye bhi class selector jaisa hi hai yaha bhi
+     jis div ka colour karna hai us div me id="green" karna hai par yaha css me .green nahi chalega yaha 
+     #green lagana padega-->
+
+
+    <style>
+        #green {
+            background-color: green;
+        }
+    </style>
+
+    <div id="green"> hey i am palash</div>
+
+
+    <!-- Ab aate hai hum child selector pe iska kaam hai ki kisi div ke under agar koi paragraph hai
+     aur maan lo hume sirf us div ke under wali paragraph ko colour karna hai na ki pure div ko
+     toh waha hum child selector ka use karenge jisse bina pure div ko colour kiye sirf paragraph ko colour
+     kia ja sakta hai aur sabse jaruri baat ye hai ki iske andar na to * kaam karta hai na hi # isme 
+     kuch aisa hota hai  (div > p)-->
+
+    <style>
+        div>p {
+            color: green;
+            background-color: yellow;
+        }
+    </style>
+
+    <div>
+        <h1>hey</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nesciunt ex eligendi.</p>
+    </div>
+
+    <!--uske baad aata hai pseudo selector jiske madad se hum ki link ka colour decide kar sakte
+    hai ki wo visit karne ke baad kaisa dikhega aur visit karne se pehle kaisa dikhaga
+    jaise humne ye link add kia ( <a href="https://www.google.com">Go to google</a>) ab hum chahte hai ki ye link visit
+    karne se pehle green dikhe toh hum style me ye add karenge ( a:link {
+            color: green;
+        })
+            aur agar hum chahe ki visit karne ke baad red dikhe to hum style ke under ye add karenge
+            ( a:visited{
+            color: rgb(255, 0, 0);
+        })-->
+
+    <style>
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+    <div>
+        <a href="https://www.google.com">Go to google</a>
+        <a href="https://www.facebook.com">Go to facebook</a>
+        <a href="https://www.instagram.com">Go to instagram</a>
+    </div>
+</body>
+
+</html>
