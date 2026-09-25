@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Aaj hum sikhne wale hai ki kaise video ko autoplay kia jata hai, kis tarah
+     se muted video ko rakha ja sakta hai aur kis tarah se video ke controls ko
+     enable and disable kar sakte hai ushike sath hum audio ko bhi dekhenge ki
+     media ko ek page me kis tarah se dikhaya ja sakta hai-->
+
+    <!-- toh sabse pehle hum dekhte hai ki video kaise add kia jaaye
+      toh video add karne ke liye humne src ka use kia and us video ko play pause
+      and other controls ke liye humne controls ka use kia uske baad agar hum autoplay
+      ka use kare toh video autoplay hone lagega, uske baad aata hai loop agar humne
+      loop ka use kia toh ek baar agar humne video play kia toh wo continous loop me chalne 
+      lagega, uske baad agar hume video ko muted karke rakhna hai toh hum muted
+      tag ka use karenge, fir aata hai poster agar hume video ka poster matlab thumbnail
+      lagana hai toh hum is tarah se kar sakte hai (poster="4.jpg.webp") -->
+</head>
+
+<body>
+    <video src="krish01.mp4" height="555" controls poster="4.jpg.webp"></video>
+
+
+
+    <!-- ab hum sikhne wale hai ki audio kaise add kare toh audio add karne ke
+     liye hum audio src ka use karenge kuch aise aur agar is audio ko autoplay karna
+     hoga toh hum autoplay ka use karenge, aur agar is audio ko loop me chalana hai toh hum loop ka use karenge
+     -->
+    <audio src="puneet01.mp3" controls></audio>
+
+    <!-- uske baad aata hai iframe jiska use hum kisi dusre website ko embade karne ke
+      liye karte hai-->
+    <iframe
+        src="https://www.codewithharry.com/courses/the-ultimate-job-ready-ai-powered-data-analytics-course?gad_source=1&gad_campaignid=23376876875&gbraid=0AAAAAqQsM_3XROW5_LEeDGPDG56atama5&gclid=Cj0KCQjw5bjVBhCiARIsAJzMVnR9UoLb8z1qmlGDKsBjBHLzmxewrCyfim3lvnCjiMJMsF-5IHif9rIaAutyEALw_wcB"
+        width="122" height="444"></iframe>
+</body>
+
+</html>
